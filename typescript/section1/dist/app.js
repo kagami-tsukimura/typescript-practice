@@ -1,3 +1,3 @@
-const message = 'hoge';
+const message = 'hogehoge';
 console.log(message);
 //# sourceMappingURL=app.js.map
