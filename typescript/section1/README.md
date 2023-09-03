@@ -1,6 +1,6 @@
 # TypeScript
 
-## Setting
+## 準備
 
 1. 初期化
 
@@ -76,4 +76,44 @@
 
    ```bash
    touch dist/index.html
+   ```
+
+## 実行-パターン 1
+
+1. 実行ファイル生成
+
+   ```bash
+   touch src/app.ts
+   ```
+
+1. トランスパイル
+
+   ```bash
+   npm run build
+   ```
+
+1. 監視モードで実行
+
+   ```bash
+   npm run watch
+   ```
+
+1. ファイル実行
+
+   ```bash
+   node dist/app.ts
+   ```
+
+## 実行-パターン 2
+
+1. 実行ファイル生成
+
+   ```bash
+   touch src/app.ts
+   ```
+
+1. ファイル実行
+
+   ```bash
+   ts-node src/app.ts
    ```
