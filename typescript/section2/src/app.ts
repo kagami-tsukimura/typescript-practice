@@ -36,3 +36,15 @@ const employeeProfI: ProfhobbyInterface = {
   hobby: 'swim',
 };
 console.log(employeeProfI.hobby);
+
+// readonly
+type ProfileR = { name: string; readonly age: number };
+type HobbyR = { hobby: string };
+
+const employeeR: ProfileR = {
+  name: 'tsukimura',
+  age: 29,
+};
+
+// readonly error
+// employeeR.age = 28;
