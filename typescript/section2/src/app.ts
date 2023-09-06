@@ -38,13 +38,33 @@ const employeeProfI: ProfhobbyInterface = {
 console.log(employeeProfI.hobby);
 
 // readonly
-type ProfileR = { name: string; readonly age: number };
-type HobbyR = { hobby: string };
+type ProfileAgeR = { name: string; readonly age: number };
 
-const employeeR: ProfileR = {
+const employeeR: ProfileAgeR = {
   name: 'tsukimura',
   age: 29,
 };
 
 // readonly error
-// employeeR.age = 28;
+// employeeAgeR.age = 28;
+
+// as const
+const employeeAC = {
+  name: 'tsukimura',
+  age: 29,
+} as const;
+
+// readonly error
+// employeeAC.name = 'yukimura';
+// employeeAC.age = 28;
+
+// NOTE: 型を指定すると型が優先される
+const employeeACT: ProfileAgeR = {
+  name: 'tsukimura',
+  age: 29,
+} as const;
+
+// // do write
+// employeeACT.name = 'yukimura';
+// // readonly error
+// employeeACT.age = 28;
