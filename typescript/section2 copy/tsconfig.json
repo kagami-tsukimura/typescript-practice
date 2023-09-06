@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "../section3/dist",
+    "baseUrl": "../section3",
+    "strict": true,
+    "paths": {
+      "*": ["../section3/node_modules/*", "../section3/src/types/*"]
+    }
+  },
+  "include": ["../section3/src/**/*"],
+  "exclude": ["../section3/node_modules", "../section3/dist"]
+}
