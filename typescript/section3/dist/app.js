@@ -1,2 +1,3 @@
 // DOM
-//# sourceMappingURL=app.js.map
+const input = document.getElementById('username');
+input.placeholder = 'Username';
