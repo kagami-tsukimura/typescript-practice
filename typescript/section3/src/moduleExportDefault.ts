@@ -1,3 +1,3 @@
-type User = { id: number; name: string };
+type UserDefault = { id: number; name: string };
 
-export default User;
+export default UserDefault;
