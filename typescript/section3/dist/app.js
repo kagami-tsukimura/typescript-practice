@@ -11,6 +11,9 @@ input.placeholder = 'Username';
 const target = document.getElementById('username');
 target.addEventListener('input', (e) => {
     console.log(e);
+    // HTML Element error
+    // console.log(e.target.value);
+    // instanceof the mold
     if (e.target instanceof HTMLInputElement) {
         console.log(e.target.value);
     }
